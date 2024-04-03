@@ -5,8 +5,9 @@ categories: [IAC, Terraform]
 tags: [cloud, iac, aws]     # TAG names should always be lowercase
 ---
 
-## Overview
+[![Source Code](/assets/img/sourcecode.png "Source code"){: width="30" height="35" }](https://github.com/bangeras/iac-terraform-aws-demo){:target="_blank"}{:rel="noopener noreferrer"}
 
+## Overview
 Terraform(IaC) framework to demonstrate some capabilitie for fundamental AWS design patterns:
 ### VPC and AZ setup
 

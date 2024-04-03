@@ -7,8 +7,9 @@ tags: [desktop, app, nodejs, reactjs]     # TAG names should always be lowercase
 pin: true
 ---
 
-## Download
-[CompressMe](https://github.com/bangeras/electron-media-compressor/releases){:target="_blank"}{:rel="noopener noreferrer"}
+
+[![](/assets/img/download.png "Download"){: width="25" height="25" }](https://github.com/bangeras/electron-media-compressor/releases){:target="_blank"}{:rel="noopener noreferrer"}
+[![Source Code](/assets/img/sourcecode.png "Source code"){: width="30" height="35" }](https://github.com/bangeras/electron-media-compressor){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Overview
 A lightweight, desktop app built with Electron to compress media files (images, videos, etc). Multiple media files can be selected & compressed.

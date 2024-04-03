@@ -18,6 +18,7 @@ This is a template project that can be used to build apps supporting the followi
 
 
 ## Architecture
+![](/assets/img/mern-nginx-mfe-serverless-demo/mern.png){: width="500" height="500" }
 
 ### NGINX
 ![NGINX flow](/assets/img/mern-nginx-mfe-serverless-demo/nginx.png){: width="500" height="500" }

@@ -7,6 +7,9 @@ order: 5
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
 <!-- {: .prompt-tip } -->
 
+I am enthusiastic about participating in visionary, challenging programs that require my level of pedigree & expertise in building scalable, simple cloud-based platforms by setting up & coaching nimble, fungible teams to achieve the greater goal of the business. Roles - CTO/Head/VP/Director/Sr. Eng Mgr
+
+### SYNOPSIS
 * Accomplished, hands-on Engineering Director with an impressive track record in building high-performing engineering teams at premier Investment banks (Morgan Stanley, Deutsche Bank, Citi) delivering
 top-notch products within schedule and budget.
 * Expertise in developing Desktop, Web and Mobile apps
@@ -22,3 +25,8 @@ architecture across programming languages and E2E technology tiers.
 MERN Stack, Electron JS, AWS, Terraform, Lambda, Containers, Docker, Redis
 Agile & Devops, Design patterns, SQL & NoSQL, Java, Spring, JavaScript, Python, R, 
 ML, NLP, Prompt Engineering
+
+### ACCREDITATIONS
+[2023] AWS Certified Cloud Practitioner
+
+[2018] Indian Statistical Institute(ISI): Data Analytics & Mining

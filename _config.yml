@@ -19,7 +19,7 @@ title: Suraj V. Bangera # the main title
 tagline: Polyglot engineer | Seasoned Engineering Manager | Expert in designing scalable systems, AWS | Mentors high-performance teams # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Portfolio website of Suraj V. Bangera
+  Portfolio site : Suraj V. Bangera
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Suraj V. Bangera
-  email: example@domain.com # change to your email address
+  email: athena.techie@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage

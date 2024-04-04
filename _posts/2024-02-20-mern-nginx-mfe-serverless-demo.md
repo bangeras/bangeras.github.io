@@ -5,7 +5,7 @@ categories: [MERN, Microfrontends]
 tags: [reactjs, microfrontend, nginx, serverless, lambda, nodejs ]     # TAG names should always be lowercase
 ---
 
-[![Source Code](/assets/img/sourcecode.png "Source code"){: width="30" height="35" }](https://github.com/bangeras/mern-nginx-mfe-serverless-demo){:target="_blank"}{:rel="noopener noreferrer"}
+[![](/assets/img/sourcecode.png "Source Code: bangeras/mern-nginx-mfe-serverless-demo"){: width="30" height="35" }](https://github.com/bangeras/mern-nginx-mfe-serverless-demo){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Overview
 This is a template project that can be used to build apps supporting the following base capabilities:

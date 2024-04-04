@@ -22,11 +22,11 @@ architecture across programming languages and E2E technology tiers.
 * Seasoned practitioner of Agile, DevOps & Extreme Programming (XP).
 
 ### SKILLS
-MERN Stack, Electron JS, AWS, Terraform, Lambda, Containers, Docker, Redis
+MERN Stack, Electron JS, AWS, Terraform, Lambda, Containers, Docker, Redis, 
 Agile & Devops, Design patterns, SQL & NoSQL, Java, Spring, JavaScript, Python, R, 
 ML, NLP, Prompt Engineering
 
-### ACCREDITATIONS
+### ![Source Code](/assets/img/medal.png "Source code"){: width="25" height="25" } ACCREDITATIONS
 [2023] AWS Certified Cloud Practitioner
 
 [2018] Indian Statistical Institute(ISI): Data Analytics & Mining

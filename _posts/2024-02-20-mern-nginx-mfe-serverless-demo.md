@@ -20,11 +20,117 @@ This is a template project that can be used to build apps supporting the followi
 ## Architecture
 ![](/assets/img/mern-nginx-mfe-serverless-demo/mern.png){: width="500" height="500" }
 
-### NGINX
+## NGINX
 ![NGINX flow](/assets/img/mern-nginx-mfe-serverless-demo/nginx.png){: width="500" height="500" }
 
-### MicroFrontends
+## MicroFrontends
+MicroFrontends are a design pattern where Front-ends are composed from independent fragments that can be built in a federated model by multiple teams
+using different, disparate technology frameworks (React, Vue, Ng2, etc.)
+
+### Module Federation
+It is the process of loading separately compiled applications at run time.
+
+```
+    new ModuleFederationPlugin(
+        {
+            name: 'CONTAINER',
+            filename: 'remoteEntry.js',
+            remotes: {
+            "MFE1": "MFE1@http://localhost:3001/remoteEntry.js"
+            }, 
+            exposes: {
+            },
+        }
+    ),
+```
+{: file="container app's webpack.config.js"}
+
+```
+    new ModuleFederationPlugin(
+        {
+            name: 'MFE1',
+            filename: 'remoteEntry.js',
+            exposes: {
+            "./ComponentA": "./src/ComponentA",
+            "./ComponentB": "./src/ComponentB"
+            },
+        }
+    ),
+```
+{: file="passenger app's webpack.config.js"}
+
+```
+import React, {lazy, Suspense} from 'react'
+
+const ComponentA = lazy(() => import("MFE1/ComponentA"));
+const ComponentB = lazy(() => import("MFE1/ComponentB"));
+
+const Dashboard = () => {
+  return (
+    <div>
+      <h1>Dashboard</h1>
+
+      <Suspense fallback={<span>Loading...</span>}>
+        <ComponentA /> 
+        <ComponentB/>     
+      </Suspense>
+    </div>
+  )
+}
+
+export default Dashboard
+```
+{: file="dashboard.js"}
+
+## EXPRESS Middleware
+
+```
+const EXPRESS_PORT = 4000
+
+const app = express()
+
+// ###### Middlewares ######
+
+// Add all essential middlewares
+const EXPRESS_PORT = 4000
+
+const app = express()
+
+// ###### Middlewares ######
+
+// Logging middleware:  Log HTTP Requests and Errors
+app.use(morgan('tiny'))
+
+// Oauth Passport middleware: Initialize Passport and restore authentication state, if any, from the session
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Use express.json() middleware to parse JSON requests
+app.use(express.json());
+
+// ###### Routes ######
+app.use("/auth", authRoutesRouter)
+app.use("/api/users", userRoutesRouter);
+
+// connect react to nodejs express server
+app.listen(config.get("EXPRESS.PORT"), () => console.log(`Server is running on port ${config.get("EXPRESS.PORT")}!`));
+```
+{: file="index.js"}
 
 
-### MERN
+```
+// Router for API routes
 
+const {User} = require("../models/user")
+const router = require("express").Router();
+// const {authCheckMiddleware} = require("../middlewares/authCheckMiddleware")
+const {getAllUsers, createUser, getUser, updateUser, deleteUser} = require("../controllers/userController")
+
+router.route("/")
+  // GET /api/users
+  .get(getAllUsers)
+  // POST /api/users
+  .post(createUser)
+
+```
+{: file="api-routes.js"}
